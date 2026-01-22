@@ -11,8 +11,8 @@ private:
 
 public:
     Dog();
-    Dog(const Dog& other);
-    Dog& operator=(const Dog& other);
+    Dog(const Dog& right);
+    Dog& operator=(const Dog& right);
     ~Dog();
 
     void makeSound() const;

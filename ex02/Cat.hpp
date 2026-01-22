@@ -11,8 +11,8 @@ private:
 
 public:
     Cat();
-    Cat(const Cat& other);
-    Cat& operator=(const Cat& other);
+    Cat(const Cat& right);
+    Cat& operator=(const Cat& right);
     ~Cat();
 
     void makeSound() const;

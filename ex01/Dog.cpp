@@ -4,23 +4,23 @@ Dog::Dog()
 {
     this->type = "Dog";
     this->brain = new Brain();
-    std::cout << "[Dog] Default constructor called" << std::endl;
+    std::cout << "Dog Default constructor called" << std::endl;
 }
 
-Dog::Dog(const Dog& other) : Animal(other)
+Dog::Dog(const Dog& right) : Animal(right)
 {
-    std::cout << "[Dog] Copy constructor called" << std::endl;
-    this->brain = new Brain(*other.brain); 
+    std::cout << "Dog Copy constructor called" << std::endl;
+    this->brain = new Brain(*right.brain); 
 }
 
-Dog& Dog::operator=(const Dog& other)
+Dog& Dog::operator=(const Dog& right)
 {
-    std::cout << "[Dog] Copy assignment operator called" << std::endl;
-    if (this != &other)
+    std::cout << "Dog Copy assignment operator called" << std::endl;
+    if (this != &right)
     {
-        Animal::operator=(other);
+        Animal::operator=(right);
         delete this->brain;
-        this->brain = new Brain(*other.brain);
+        this->brain = new Brain(*right.brain);
     }
     return *this;
 }
@@ -28,10 +28,10 @@ Dog& Dog::operator=(const Dog& other)
 Dog::~Dog()
 {
     delete this->brain;
-    std::cout << "[Dog] Destructor called" << std::endl;
+    std::cout << "Dog Destructor called" << std::endl;
 }
 
 void Dog::makeSound() const
 {
-    std::cout << "Woof!" << std::endl;
+    std::cout << "Havhav" << std::endl;
 }

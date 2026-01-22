@@ -11,8 +11,8 @@ protected:
 
 public:
     Animal();
-    Animal(const Animal& other);
-    Animal& operator=(const Animal& other);
+    Animal(const Animal& right);
+    Animal& operator=(const Animal& right);
     virtual ~Animal();
 
     virtual void makeSound() const = 0; 

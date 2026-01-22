@@ -2,30 +2,30 @@
 
 WrongAnimal::WrongAnimal() : type("WrongAnimal")
 {
-    std::cout << "[WrongAnimal] Default constructor called" << std::endl;
+    std::cout << "WrongAnimal Default constructor called" << std::endl;
 }
 
-WrongAnimal::WrongAnimal(const WrongAnimal& other)
+WrongAnimal::WrongAnimal(const WrongAnimal& right)
 {
-    std::cout << "[WrongAnimal] Copy constructor called" << std::endl;
-    *this = other;
+    std::cout << "WrongAnimal Copy constructor called" << std::endl;
+    *this = right;
 }
 
-WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other)
+WrongAnimal& WrongAnimal::operator=(const WrongAnimal& right)
 {
-    if (this != &other)
-        this->type = other.type;
+    if (this != &right)
+        this->type = right.type;
     return *this;
 }
 
 WrongAnimal::~WrongAnimal()
 {
-    std::cout << "[WrongAnimal] Destructor called" << std::endl;
+    std::cout << "WrongAnimal Destructor called" << std::endl;
 }
 
 void WrongAnimal::makeSound() const
 {
-    std::cout << "* WrongAnimal generic sound *" << std::endl;
+    std::cout << "WrongAnimal generic sound" << std::endl;
 }
 
 std::string WrongAnimal::getType() const
