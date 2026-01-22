@@ -7,23 +7,26 @@
 
 int main()
 {    
-    const Animal* animals[4]; 
+    const Animal* animals[4];
+    std::cout << "-------------------------" << std::endl;
     for (int i = 0; i < 2; i++)
     {
         animals[i] = new Dog();
     }
+    std::cout << "-------------------------" << std::endl;
     for (int i = 2; i < 4; i++)
     {
         animals[i] = new Cat();
     }
+    std::cout << "-------------------------" << std::endl;
     for (int i = 0; i < 4; i++)
     {
         delete animals[i];
     }
+    std::cout << "-------------------------" << std::endl;
     Dog basic;
     {
         Dog tmp = basic;
     }    
-    std::cout << "End of Deep Copy Test Scope" << std::endl;
     return 0;
 }
