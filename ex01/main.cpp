@@ -23,10 +23,10 @@ int main()
     {
         delete animals[i];
     }
-    std::cout << "-------------------------" << std::endl;
+    std::cout << "----------COPY---------------" << std::endl;
     Dog minidog;
     {
-        Dog temp = minidog;
+        Dog cpydog = minidog;
     }    
     return 0;
 }

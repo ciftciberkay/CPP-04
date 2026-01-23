@@ -17,7 +17,7 @@ int main()
     delete i;
     Dog minidog;
     {
-        Dog temp = minidog;
+        Dog cpydog = minidog;
     }
     return 0;
 }
