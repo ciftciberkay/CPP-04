@@ -15,9 +15,9 @@ int main()
     j->makeSound();
     delete j;
     delete i;
-    Dog basic;
+    Dog minidog;
     {
-        Dog tmp = basic;
+        Dog temp = minidog;
     }
     return 0;
 }

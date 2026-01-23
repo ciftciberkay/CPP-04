@@ -8,25 +8,25 @@
 int main()
 {    
     const Animal* animals[4];
-    std::cout << "-------------------------" << std::endl;
+    std::cout << "-----------DOG--------------" << std::endl;
     for (int i = 0; i < 2; i++)
     {
         animals[i] = new Dog();
     }
-    std::cout << "-------------------------" << std::endl;
+    std::cout << "-----------CAT--------------" << std::endl;
     for (int i = 2; i < 4; i++)
     {
         animals[i] = new Cat();
     }
-    std::cout << "-------------------------" << std::endl;
+    std::cout << "-----------DESC--------------" << std::endl;
     for (int i = 0; i < 4; i++)
     {
         delete animals[i];
     }
     std::cout << "-------------------------" << std::endl;
-    Dog basic;
+    Dog minidog;
     {
-        Dog tmp = basic;
+        Dog temp = minidog;
     }    
     return 0;
 }
