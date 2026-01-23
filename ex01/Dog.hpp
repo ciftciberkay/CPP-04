@@ -14,7 +14,6 @@ public:
     Dog(const Dog& right);
     Dog& operator=(const Dog& right);
     ~Dog();
-
     void makeSound() const;
 };
 
