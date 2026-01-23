@@ -7,14 +7,21 @@
 
 int main()
 {
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
-    std::cout << j->getType() << " " << std::endl;
-    std::cout << i->getType() << " " << std::endl;
-    i->makeSound(); 
-    j->makeSound();
-    delete j;
-    delete i;
+    /* Animal falseA;
+    Animal* falseB = new Animal(); */
+
+    const Animal* adog = new Dog();
+    const Animal* acat = new Cat();
+    std::cout << "-------------------------" << std::endl;
+    std::cout << adog->getType() << " " << std::endl;
+    std::cout << acat->getType() << " " << std::endl;
+    std::cout << "-------------------------" << std::endl;
+    adog->makeSound(); 
+    acat->makeSound();
+    std::cout << "-------------------------" << std::endl;
+    delete adog;
+    delete acat;
+    std::cout << "-------------------------" << std::endl;
     Dog minidog;
     {
         Dog cpydog = minidog;
